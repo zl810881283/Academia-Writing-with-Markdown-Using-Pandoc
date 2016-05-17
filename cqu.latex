@@ -1,0 +1,149 @@
+\documentclass[bachelor,zhspacing]{cqu}  %单面打印版本
+\usepackage{etex}
+
+
+%%在这增加你需要的其它包
+\definecolor{hellgelb}{rgb}{1,1,0.8}
+\definecolor{colKeys}{rgb}{0,0,1}
+\definecolor{colIdentifier}{rgb}{0,0,0}
+\definecolor{colComments}{rgb}{1,0,0}
+\definecolor{colString}{rgb}{0,0.5,0}
+\usepackage{listings}
+\lstset{%
+    float=hbp,%
+    basicstyle=\ttfamily\small, %
+    identifierstyle=\color{colIdentifier}, %
+    keywordstyle=\color{colKeys}, %
+    stringstyle=\color{colString}, %
+    commentstyle=\color{colComments}, %
+    columns=flexible, %
+    tabsize=4, %
+    frame=single, %
+    extendedchars=true, %
+    showspaces=false, %
+    showstringspaces=false, %
+    numbers=left, %
+    numberstyle=\tiny, %
+    breaklines=true, %
+   backgroundcolor=\color{hellgelb}, %
+    breakautoindent=true, %
+    captionpos=b,%
+	xleftmargin=0pt%
+}
+
+\begin{document}
+
+%-----------------------------------论文题目-------------------------------------------------
+\xuehao{20121892}
+\cntitle{重庆大学\LaTeX 学位论文模板CQU使用说明}
+\cnauthor{张乐}
+\cnmajor{软件工程}
+\cnteacher{葛永新}
+\cnxueyuan{软件学院}
+\entitle{An Instruction of the \LaTeX\ Templet for Chongqing University Thesis}
+\enauthor{Le Zhang}
+\enmajor{Software Engineering}
+\enteacher{Prof. Yongxin Ge}
+\enxueyuan{College of Software}
+\cnkind{****}
+\enkind{****}
+%\cnzlteacher{ }  %%助理教师，如果必要，还要将cqu.cls中的有关该项前的%号去掉
+%\enzlteacher{ }
+\cndate{二O一六年六月}
+\endate{June 2016}
+%%%%只需修改上面的相关信息%%%%%%%%
+\makecntitle 
+\makeentitle 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagenumbering{Roman}
+\setcounter{page}{0}
+%------------------------------------文章摘要------------------------------------------------------------
+\cnkeywords{模板，摘要，论文，\LaTeX}
+\begin{cnabstract}
+摘要是设计或论文内容不加注释和评论的简短陈述，应以第三人称陈述。它应具有独立性和自含性，
+即不阅读设计或论文的全文，就能获得必要的信息，摘要的内容应包含与设计或论文同等量的主要信
+息，供读者确定有无必要阅读全文，也供文摘等二次文献采用。\par
+摘要一般应说明研究工作目的、实验研究方法、结果和最终结论等，而重点是结果和结论。摘要中一
+般不用图、表、化学结构式、计算机程序，不用非公知公用的符号、术语和非法定的计量单位。\par
+摘要页置于英文题名页后。 \par
+中文摘要一般为400汉字左右，用小四号宋体。 \par
+关键词是为了文献标引工作从设计（论文）中选取出来用以表示全文主题内容信息款目的单词或术
+语。一般每篇设计（论文）应选取3~5个词作为关键词，关键词间用逗号隔开，最后一个词后不打标点
+符号。以显著的字符排在同种语言摘要的下方。如有可能，尽量用《汉语主题词表》等词表提供的规
+范词。\par
+本文介绍重庆大学论文模板cqu的使用方法。本模板符合学校的本科论文格式基本要求，而硕博模板
+有待完善。
+本文的创新点主要有:
+\begin{itemize*}
+\item 用例子来解释模板的使用方法;
+\item 用废话来填充无关紧要的部分;
+\item 一边学习摸索一边编写新代码。
+\end{itemize*}
+(模板作者注:中文关键词定义cnkeywords应在使用中文摘要环境之前。英文关键词同理。)
+\end{cnabstract} 
+\enkeywords{template, \LaTeX, abstract, paper}
+\begin{enabstract}
+     An abstract of a dissertation is a summary and extraction of 
+research work and contributions. Included in an abstract should be 
+description of research topic and research objective, brief 
+introduction to methodology and research process, and summarization 
+of conclusion and contributions of the research. An abstract should be 
+characterized by independence and clarity and carry identical 
+information with the dissertation. It should be such that the general 
+idea and major contributions of the dissertation are conveyed
+without reading the dissertation.\par
+     An abstract should be concise and to the point. It is a 
+misunderstanding to make an abstract an outline of the dissertation and 
+words “the first chapter”, “the second chapter” and the like should be 
+avoided in the abstract.\par
+     Key words are terms used in a dissertation for indexing, 
+reflecting core information of the dissertation. An abstract may 
+contain a maximum of 5 key words, with semicolons used in between to 
+separate one another.
+\end{enabstract}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%--------------文章目录-------------
+\tableofcontents
+\listoffigures
+%\addcontentsline{toc}{section}{插图清单}
+\listoftables
+%\addcontentsline{toc}{section}{附表清单}
+
+
+%------------------------------------词汇------------------------------------------------------------
+\begin{denotation}{2.5}{0}
+
+\item[cluster] 集群
+\item[Itanium] 安腾
+\item[SMP] 对称多处理
+\item[API] 应用程序编程接口
+\item[PI]   聚酰亚胺
+\item[劝  学] 君子曰：学不可以已。青，取之于蓝，而青于蓝；冰，水为之，而寒于水。
+  木直中绳。（车柔）以为轮，其曲中规。虽有槁暴，不复挺者，（车柔）使之然也。故木
+  受绳则直， 金就砺则利，君子博学而日参省乎己，则知明而行无过矣。吾尝终日而思
+  矣，  不如须臾之所学也；吾尝（足齐）而望矣，不如登高之博见也。登高而招，臂非加
+  长也，  而见者远；  顺风而呼，  声非加疾也，而闻者彰。假舆马者，非利足也，而致
+  千里；假舟楫者，非能水也，而绝江河，  君子生非异也，善假于物也。积土成山，风雨
+  兴焉；积水成渊，蛟龙生焉；积善成德，而神明自得，圣心备焉。故不积跬步，无以至千
+  里；不积小流，无以成江海。骐骥一跃，不能十步；驽马十驾，功在不舍。锲而舍之，朽
+  木不折；  锲而不舍，金石可镂。蚓无爪牙之利，筋骨之强，上食埃土，下饮黄泉，用心
+  一也。蟹六跪而二螯，非蛇鳝之穴无可寄托者，用心躁也。\pozhehao{} 荀况
+\end{denotation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagenumbering{arabic}
+
+$body$
+
+%\include{chapters/summery}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%\include{chapters/appendix}  %%附录
+
+\end{document}
